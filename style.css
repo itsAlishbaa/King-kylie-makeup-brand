@@ -12,11 +12,18 @@
     background-color: rgb(148, 123, 155);
 }
 
-.img-box {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+.word1 {
+    font-family: cursive;
+    color: cyan;
+    font-style: oblique;
+    text-shadow: 2px 2px 8px hotpink;
 
+}
+
+.word2 {
+    font-family: Arial, sans-serif;
+    color: hotpink;
+    text-shadow: 2px 2px 8px cyan;
 }
 
 body {
@@ -35,4 +42,8 @@ body {
 header {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    text-align: center;
 }
