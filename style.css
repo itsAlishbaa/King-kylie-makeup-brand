@@ -16,6 +16,7 @@
     font-family: cursive;
     color: cyan;
     font-style: oblique;
+    align-items: center;
     text-shadow: 2px 2px 8px hotpink;
 
 }
@@ -44,6 +45,26 @@ header {
     padding: 0;
 }
 
-h1 {
-    text-align: center;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.images {
+    display: flex;
+    gap: 0;
+}
+
+.images img {
+    display: block;
+    width: 60px;
 }
