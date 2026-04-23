@@ -32,7 +32,7 @@ body {
     margin: 0;
     height: 100vh;
     background: linear-gradient(to bottom,
-            black 0%,
+            black 10%,
             #2b2b2b 20%,
             #8b5a7a 60%,
             pink 100%);
