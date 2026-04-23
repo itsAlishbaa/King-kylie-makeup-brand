@@ -33,7 +33,7 @@ body {
     margin: 0;
     height: 100vh;
     background: linear-gradient(to bottom,
-            black 10%,
+            black 6%,
             #2b2b2b 20%,
             #8b5a7a 60%,
             pink 100%);
@@ -68,4 +68,10 @@ header {
 .images img {
     width: 60px;
     display: block;
+}
+
+.lower {
+    color: aliceblue;
+    word-spacing: 15px;
+    font-size: 24px;
 }
