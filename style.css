@@ -57,15 +57,16 @@ body {
     font-size: 22px;
 }
 
-/* video */
+/* video top */
 .lipi video {
     width: 100%;
     max-height: 450px;
     object-fit: cover;
 }
 
-/* title */
-.section-title {
+/* section title */
+.section-title,
+.trend-title {
     font-size: 32px;
     font-weight: bold;
     color: white;
@@ -81,7 +82,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     transition: 0.3s;
     height: 100%;
-
 }
 
 .product-card:hover {
@@ -97,11 +97,8 @@ body {
 
 .card-top img {
     width: 100%;
-
-    object-fit: contain;
     height: 260px;
     object-fit: contain;
-
 }
 
 /* labels */
@@ -137,61 +134,36 @@ body {
     font-weight: bold;
 }
 
-.trend-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 2px;
-}
-
-/* Title */
-.trend-title {
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-/* Title */
-.trend-title {
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-/* Grid spacing control */
-.row.g-3 {
-    --bs-gutter-x: 12px;
-    --bs-gutter-y: 12px;
-}
-
-/* Video container */
+/* 🔥 VIDEO SECTION FIX */
 .video-box {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
 }
 
-/* Video */
 .video-box video {
     width: 100%;
-    height: 250px;
+    height: 420px;
+    /* balanced height */
     object-fit: cover;
     display: block;
     border-radius: 12px;
 }
 
-/* Play button overlay */
+/* play button */
 .play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     border: none;
 
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
     font-size: 22px;
     cursor: pointer;
 
@@ -200,17 +172,14 @@ body {
     justify-content: center;
 }
 
-/* Hide button when playing */
+/* hide on play */
 .video-box.playing .play-btn {
     display: none;
 }
 
+/* 🔥 GLOBAL SPACING FIX */
+.container,
 .container-fluid {
-    padding-left: 6px !important;
-    padding-right: 6px !important;
-}
-
-.row.g-2 {
-    --bs-gutter-x: 10px;
-    --bs-gutter-y: 10px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
 }
