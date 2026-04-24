@@ -51,7 +51,6 @@ header {
     height: 90px;
 }
 
-/* CENTER LOGO */
 .logo {
     position: absolute;
     left: 50%;
@@ -60,7 +59,6 @@ header {
     text-align: center;
 }
 
-/* RIGHT IMAGES */
 .images {
     position: absolute;
     right: 10px;
