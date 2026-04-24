@@ -143,3 +143,9 @@ body {
     color: white;
     letter-spacing: 2px;
 }
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
