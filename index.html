@@ -3,183 +3,208 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Kylie Makeup</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <marquee class="single-line">
-        ❤️This website is a replica of original makeup brand website of King Kylie for a lab task❤️
+        ❤️This website is a replica of original makeup brand website❤️
     </marquee>
 
+    <!-- HEADER -->
     <div class="header">
-
         <h1 class="logo">
             <span class="word1">King</span>
             <span class="word2">KYLIE</span>
         </h1>
 
-        <div class="images">
+        <div class="images d-flex">
             <img src="Assets/Images/Screenshot 2026-04-23 143720.png">
             <img src="Assets/Images/Screenshot 2026-04-23 143806.png">
             <img src="Assets/Images/Screenshot 2026-04-23 145713.png">
             <img src="Assets/Images/Screenshot 2026-04-23 143927.png">
         </div>
-
     </div>
 
-    <div class="lower">
+    <div class="lower text-center text-light">
         <p>cosmetics ✦ fragrance ✦ skin deals ✦ discover ✦ reward ✦ guide</p>
     </div>
 
     <!-- VIDEO -->
-    <div class="lipi">
+    <div class="lipi d-flex justify-content-center my-5">
         <video autoplay muted loop playsinline>
             <source src="Assets/Media/Video/brand.mp4" type="video/mp4">
         </video>
-        <!-- Hidden Background Music -->
+
         <audio id="bgmusic" loop>
-            <source src="Assets\Media\Audio\audiov.mp3" type="audio/mpeg">
+            <source src="Assets/Media/Audio/audiov.mp3" type="audio/mpeg">
         </audio>
     </div>
 
-    <!-- PRODUCTS SECTION -->
-    <h2 class="section-title">Best Sellers</h2>
+    <!-- TITLE -->
+    <h2 class="section-title text-center text-white mb-4">Best Sellers</h2>
 
-    <div class="products">
+    <!-- PRODUCTS (BOOTSTRAP GRID ✅) -->
+    <div class="container">
+        <div class="row g-4">
 
-        <!-- CARD 1 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+5 shades</span>
-                <img src="Assets/Images/p1 (8).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Matte Lip Kit</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 1 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+5 shades</span>
+                        <img src="Assets/Images/p1 (8).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Matte Lip Kit</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$29</div>
+                    </div>
                 </div>
-                <div class="price">$29</div>
             </div>
-        </div>
 
-        <!-- CARD 2 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+10 shades</span>
-                <img src="Assets/Images/p1 (7).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Gloss Shine</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 2 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+10 shades</span>
+                        <img src="Assets/Images/p1 (7).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Gloss Shine</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$19</div>
+                    </div>
                 </div>
-                <div class="price">$19</div>
             </div>
-        </div>
 
-        <!-- CARD 3 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+6 shades</span>
-                <img src="Assets/Images/p1 (6).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Skin Foundation</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 3 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+6 shades</span>
+                        <img src="Assets/Images/p1 (6).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Skin Foundation</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$35</div>
+                    </div>
                 </div>
-                <div class="price">$35</div>
             </div>
-        </div>
 
-        <!-- CARD 4 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+8 shades</span>
-                <img src="Assets/Images/p1 (5).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Blush Set</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 4 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+8 shades</span>
+                        <img src="Assets/Images/p1 (5).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Blush Set</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$25</div>
+                    </div>
                 </div>
-                <div class="price">$25</div>
             </div>
-        </div>
 
-        <!-- CARD 5 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+5 shades</span>
-                <img src="Assets/Images/p1 (4).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Eye Palette</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 5 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+5 shades</span>
+                        <img src="Assets/Images/p1 (4).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Eye Palette</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$40</div>
+                    </div>
                 </div>
-                <div class="price">$40</div>
             </div>
-        </div>
 
-        <!-- CARD 6 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+7 shades</span>
-                <img src="Assets/Images/p1 (3).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Highlighter Glow</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 6 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+7 shades</span>
+                        <img src="Assets/Images/p1 (3).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Highlighter Glow</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$30</div>
+                    </div>
                 </div>
-                <div class="price">$30</div>
             </div>
-        </div>
 
-        <!-- CARD 7 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+4 shades</span>
-                <img src="Assets/Images/p1 (2).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Lip Gloss</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 7 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+4 shades</span>
+                        <img src="Assets/Images/p1 (2).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Lip Gloss</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$18</div>
+                    </div>
                 </div>
-                <div class="price">$18</div>
             </div>
-        </div>
 
-        <!-- CARD 8 -->
-        <div class="product-card">
-            <div class="card-top">
-                <span class="tag">NEW</span>
-                <span class="shades">+12 shades</span>
-                <img src="Assets/Images/p1 (8).png">
-            </div>
-            <div class="card-bottom">
-                <div class="info">
-                    <h3>Makeup Kit</h3>
-                    <div class="rating">★★★★★</div>
+            <!-- CARD 8 -->
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-card">
+                    <div class="card-top">
+                        <span class="tag">NEW</span>
+                        <span class="shades">+12 shades</span>
+                        <img src="Assets/Images/p1 (8).png">
+                    </div>
+                    <div class="card-bottom">
+                        <div class="info">
+                            <h3>Makeup Kit</h3>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                        <div class="price">$55</div>
+                    </div>
                 </div>
-                <div class="price">$55</div>
             </div>
-        </div>
 
+        </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
