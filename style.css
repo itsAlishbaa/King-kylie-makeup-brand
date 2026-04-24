@@ -92,3 +92,32 @@ header {
     max-height: 800px;
     object-fit: cover;
 }
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.price {
+    color: #555;
+    font-weight: bold;
+}
