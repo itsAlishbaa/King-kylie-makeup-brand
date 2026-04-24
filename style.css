@@ -275,7 +275,7 @@ body {
     color: #fff;
 
     width: 90%;
-    max-width: 950px;
+    max-width: 90%;
 
     padding: 80px 60px;
 
@@ -322,7 +322,7 @@ body {
 /* EMAIL INPUT (BIG + CLEAN) */
 .signup-form input {
     width: 100%;
-    max-width: 550px;
+    max-width: 60%px;
 
     padding: 18px 20px;
     font-size: 15px;
