@@ -222,13 +222,15 @@ body {
 /* =========================
    LAST IMAGE SECTION
 ========================= */
-
 .mainpic {
+    position: relative;
+    /* 👈 important */
     display: flex;
     justify-content: flex-start;
     margin: 40px 0;
 }
 
+/* image */
 .mainpic img {
     width: 40%;
     max-width: 40%;
@@ -236,4 +238,34 @@ body {
     object-fit: cover;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* TEXT OVER IMAGE */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    /* image ke samne center feel */
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* MAIN HEADING */
+.trend-tio {
+    color: #f8f1e7;
+    /* creamy white */
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 38px;
+    margin: 0;
+}
+
+/* SUB TEXT */
+.sub-text {
+    color: #f5e6d3;
+    /* soft creamy tone */
+    font-size: 16px;
+    margin-top: 10px;
+    font-style: italic;
+    letter-spacing: 1px;
 }
