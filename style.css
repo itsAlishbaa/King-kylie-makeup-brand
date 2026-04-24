@@ -144,8 +144,73 @@ body {
     letter-spacing: 2px;
 }
 
-video {
+/* Title */
+.trend-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Title */
+.trend-title {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Grid spacing control */
+.row.g-3 {
+    --bs-gutter-x: 12px;
+    --bs-gutter-y: 12px;
+}
+
+/* Video container */
+.video-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Video */
+.video-box video {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+/* Play button overlay */
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hide button when playing */
+.video-box.playing .play-btn {
+    display: none;
+}
+
+.container-fluid {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+
+.row.g-2 {
+    --bs-gutter-x: 10px;
+    --bs-gutter-y: 10px;
 }

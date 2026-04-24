@@ -204,35 +204,70 @@
     <div class="container text-center my-5">
         <h2 class="trend-title">TRENDING NOW</h2>
     </div>
-    <div class="container">
-        <div class="row">
+    <!-- VIDEOS -->
+    <div class="container-fluid px-2">
+        <div class="row g-2">
 
             <div class="col-lg-3 col-md-6 col-12">
-                <video controls>
-                    <source src="video1.mp4">
-                </video>
+                <div class="video-box">
+                    <video class="myVideo">
+                        <source src="Assets/Media/Video/v2.mp4">
+                    </video>
+                    <button class="play-btn">▶</button>
+                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-12">
-                <video controls>
-                    <source src="video2.mp4">
-                </video>
+                <div class="video-box">
+                    <video class="myVideo">
+                        <source src="Assets/Media/Video/v3.mp4">
+                    </video>
+                    <button class="play-btn">▶</button>
+                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-12">
-                <video controls>
-                    <source src="video3.mp4">
-                </video>
+                <div class="video-box">
+                    <video class="myVideo">
+                        <source src="Assets/Media/Video/v4.mp4">
+                    </video>
+                    <button class="play-btn">▶</button>
+                </div>
             </div>
 
             <div class="col-lg-3 col-md-6 col-12">
-                <video controls>
-                    <source src="video4.mp4">
-                </video>
+                <div class="video-box">
+                    <video class="myVideo">
+                        <source src="Assets/Media/Video/v1.mp4">
+                    </video>
+                    <button class="play-btn">▶</button>
+                </div>
             </div>
 
         </div>
     </div>
+
+    <!-- JS -->
+    <script>
+        document.querySelectorAll(".video-box").forEach(box => {
+            const video = box.querySelector(".myVideo");
+            const btn = box.querySelector(".play-btn");
+
+            btn.addEventListener("click", () => {
+                if (video.paused) {
+                    video.play();
+                    box.classList.add("playing");
+                } else {
+                    video.pause();
+                    box.classList.remove("playing");
+                }
+            });
+
+            video.addEventListener("ended", () => {
+                box.classList.remove("playing");
+            });
+        });
+    </script>
 
 </body>
 
