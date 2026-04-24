@@ -89,19 +89,19 @@ header {
 
 .lipi video {
     width: 100%;
-    max-height: 700px;
+    max-height: 900px;
     object-fit: cover;
 }
 
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 30px;
     padding: 40px;
 }
 
-/* CARD */
 .product-card {
+    padding-bottom: 90px;
     width: 100%;
     border-radius: 16px;
     overflow: hidden;
