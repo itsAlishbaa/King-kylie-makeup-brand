@@ -267,90 +267,109 @@ body {
 }
 
 /* =========================
-   SIGNUP SECTION (IMPROVED)
+   SIGNUP SECTION (FINAL PREMIUM VERSION)
 ========================= */
 
 .signup-container {
-    margin: 120px auto;
+    margin: 140px auto;
     color: #fff;
-    max-width: 90%;
-    padding: 40px;
-    border-radius: 20px;
 
-    /* glass effect */
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 950px;
+
+    padding: 80px 60px;
+
+    border-radius: 25px;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* title */
+/* TITLE */
 .signup-title {
     font-weight: 900;
     letter-spacing: 3px;
-    margin-bottom: 25px;
-    font-size: 28px;
+    margin-bottom: 15px;
+    font-size: 32px;
 }
 
-/* label */
+/* SMALL TEXT */
 .signup-text {
     font-size: 14px;
     letter-spacing: 2px;
     opacity: 0.9;
+    margin-bottom: 5px;
 }
 
-/* form layout */
+/* EXTRA SUB TEXT */
+.signup-subtext {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 25px;
+}
+
+/* FORM */
 .signup-form {
-    margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-/* email input (BIG IMPROVEMENT) */
+/* EMAIL INPUT (BIG + CLEAN) */
 .signup-form input {
     width: 100%;
-    max-width: 380px;
-    padding: 14px 15px;
+    max-width: 550px;
+
+    padding: 18px 20px;
+    font-size: 15px;
+
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
+
     outline: none;
-    font-size: 14px;
 }
 
-/* button */
+/* BUTTON */
 .signup-form button {
-    padding: 14px 22px;
+    padding: 18px 28px;
+
     border: none;
+    border-radius: 12px;
+
     background: linear-gradient(45deg, black, #333);
     color: white;
-    border-radius: 10px;
-    cursor: pointer;
+
     font-weight: bold;
     letter-spacing: 1px;
+
+    cursor: pointer;
     transition: 0.3s;
 }
 
 .signup-form button:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     background: #111;
 }
 
-/* terms */
+/* TERMS */
 .terms {
-    margin-top: 18px;
+    margin-top: 20px;
     font-size: 12px;
     opacity: 0.75;
 }
 
-/* social */
+/* SOCIAL LINKS */
 .social {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .social a {
-    margin: 0 12px;
+    margin: 0 14px;
     color: #f5e6d3;
-
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
