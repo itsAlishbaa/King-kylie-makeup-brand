@@ -169,3 +169,7 @@ body {
 .price {
     font-weight: bold;
 }
+
+audio {
+    display: none;
+}
