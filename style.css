@@ -265,3 +265,74 @@ body {
     font-style: italic;
     letter-spacing: 1px;
 }
+
+/* container */
+.signup-container {
+    margin-top: 100px;
+    color: #fff;
+}
+
+/* title */
+.signup-title {
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* label text */
+.signup-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+/* form */
+.signup-form {
+    margin-top: 20px;
+}
+
+/* email input */
+.signup-form input {
+    width: 280px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* submit button */
+.signup-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background: #333;
+}
+
+/* terms */
+.terms {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* social links */
+.social {
+    margin-top: 25px;
+}
+
+.social a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social a:hover {
+    color: cyan;
+}
