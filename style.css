@@ -133,3 +133,10 @@ body {
 .price {
     font-weight: bold;
 }
+
+.trend-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
