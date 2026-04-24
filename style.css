@@ -85,6 +85,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 60px
 }
 
 .lipi video {
@@ -96,8 +97,15 @@ header {
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    padding: 40px;
+    gap: 40px;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.products::before {
+    content: "";
+    display: block;
+    height: 20px;
 }
 
 .product-card {
