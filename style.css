@@ -94,43 +94,52 @@ header {
 }
 
 .products {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
 }
 
+/* CARD */
 .product-card {
-    width: 230px;
-    border-radius: 14px;
+    width: 100%;
+    border-radius: 16px;
     overflow: hidden;
     background: #fff;
     font-family: Arial, sans-serif;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
 }
 
 /* TOP */
 .card-top {
     position: relative;
-    background: #f5f5f5;
+    background: #f7f7f7;
+    padding: 20px;
     text-align: center;
-    padding: 15px;
 }
 
 .card-top img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    /* bigger size */
+    object-fit: contain;
 }
 
-/* labels */
+/* LABELS */
 .tag {
     position: absolute;
     top: 10px;
     left: 10px;
     background: black;
     color: white;
-    font-size: 11px;
-    padding: 4px 8px;
-    border-radius: 4px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
 }
 
 .shades {
@@ -138,9 +147,9 @@ header {
     top: 10px;
     right: 10px;
     background: white;
-    font-size: 11px;
-    padding: 4px 8px;
-    border-radius: 4px;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
     border: 1px solid #ddd;
 }
 
@@ -149,20 +158,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 15px;
 }
 
 .info h3 {
     margin: 0;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .rating {
-    font-size: 12px;
+    font-size: 13px;
     color: gold;
 }
 
 .price {
+    font-size: 16px;
     font-weight: bold;
-    font-size: 14px;
 }
