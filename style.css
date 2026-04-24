@@ -378,3 +378,63 @@ body {
 .social a:hover {
     color: cyan;
 }
+
+/* =========================
+   GITHUB SECTION
+========================= */
+
+.github-section {
+    margin: 120px auto 60px;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* image */
+.github-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+/* name */
+.github-name {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+/* id */
+.github-id {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* description */
+.github-desc {
+    font-size: 14px;
+    opacity: 0.75;
+    margin-bottom: 20px;
+}
+
+/* link button */
+.github-link {
+    display: inline-block;
+    padding: 12px 25px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.github-link:hover {
+    background: #333;
+    transform: scale(1.05);
+}
