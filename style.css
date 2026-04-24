@@ -1,10 +1,21 @@
+/* =========================
+   BODY / PAGE BACKGROUND
+========================= */
+
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, black, #8b5a7a, pink);
+    background: linear-gradient(to bottom,
+            #000000,
+            #4b2b3a,
+            #8b5a7a,
+            #f2b6c6);
 }
 
-/* marquee */
+/* =========================
+   MARQUEE
+========================= */
+
 .single-line {
     font-family: Georgia, serif;
     font-weight: bold;
@@ -14,7 +25,10 @@ body {
     overflow: hidden;
 }
 
-/* logo */
+/* =========================
+   LOGO
+========================= */
+
 .word1 {
     font-family: cursive;
     color: cyan;
@@ -27,7 +41,10 @@ body {
     text-shadow: 2px 2px 8px cyan;
 }
 
-/* header */
+/* =========================
+   HEADER
+========================= */
+
 .header {
     position: relative;
     height: 90px;
@@ -51,28 +68,53 @@ body {
     width: 60px;
 }
 
-/* lower text */
+/* =========================
+   LOWER TEXT
+========================= */
+
 .lower {
     word-spacing: 15px;
     font-size: 22px;
 }
 
-/* video */
+/* =========================
+   TOP VIDEO (UNCHANGED)
+========================= */
+
 .lipi video {
     width: 100%;
     max-height: 450px;
     object-fit: cover;
 }
 
-/* title */
-.section-title {
+/* =========================
+   TITLES
+========================= */
+
+.section-title,
+.trend-title,
+.trend-ti {
     font-size: 32px;
     font-weight: bold;
     color: white;
     letter-spacing: 2px;
 }
 
-/* product card */
+/* =========================
+   GLOBAL PADDING FIX (MAIN CHANGE)
+   👉 Screen edges se gap fix
+========================= */
+
+.container,
+.container-fluid {
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+/* =========================
+   PRODUCT CARDS
+========================= */
+
 .product-card {
     background: white;
     width: 100%;
@@ -81,7 +123,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     transition: 0.3s;
     height: 100%;
-
 }
 
 .product-card:hover {
@@ -97,11 +138,8 @@ body {
 
 .card-top img {
     width: 100%;
-
+    height: 380px;
     object-fit: contain;
-    height: 400px;
-    object-fit: contain;
-
 }
 
 /* labels */
@@ -137,39 +175,16 @@ body {
     font-weight: bold;
 }
 
-.trend-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    letter-spacing: 2px;
-}
+/* =========================
+   VIDEO SECTION
+========================= */
 
-/* Title */
-.trend-title {
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-/* Title */
-.trend-title {
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-/* Grid spacing control */
-.row.g-3 {
-    --bs-gutter-x: 12px;
-    --bs-gutter-y: 12px;
-}
-
-/* Video container */
 .video-box {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
 }
 
-/* Video */
 .video-box video {
     width: 100%;
     height: 550px;
@@ -178,7 +193,7 @@ body {
     border-radius: 12px;
 }
 
-/* Play button overlay */
+/* play button */
 .play-btn {
     position: absolute;
     top: 50%;
@@ -200,17 +215,25 @@ body {
     justify-content: center;
 }
 
-/* Hide button when playing */
 .video-box.playing .play-btn {
     display: none;
 }
 
-.container-fluid {
-    padding-left: 6px !important;
-    padding-right: 6px !important;
+/* =========================
+   LAST IMAGE SECTION
+========================= */
+
+.mainpic {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0;
 }
 
-.row.g-2 {
-    --bs-gutter-x: 10px;
-    --bs-gutter-y: 10px;
+.mainpic img {
+    width: 40%;
+    max-width: 40%;
+    height: 1000px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
